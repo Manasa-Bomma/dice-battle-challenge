@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Dice Battle Pro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Dice Battle</h1>
+
+        <div class="score-board">
+            <p>P1 Score: <span id="p1-score">0</span> | P2 Score: <span id="p2-score">0</span></p>
+        </div>
+
+        <div class="dice-wrapper">
+            <div class="dice">
+                <p>Player 1</p>
+                <img id="img1" src="images/dice6.png" alt="dice">
+            </div>
+
+            <div class="dice">
+                <p>Player 2</p>
+                <img id="id2" src="images/dice6.png" alt="dice">
+            </div>
+        </div>
+
+        <button id="roll-btn" onclick="rollDice()">Roll the Dice!</button>
+        
+        <footer>Made for Web Dev Internship Portfolio</footer>
+    </div>
+
+    <script src="script.js" charset="utf-8"></script>
+</body>
+</html>

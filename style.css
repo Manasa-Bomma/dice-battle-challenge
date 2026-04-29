@@ -1,0 +1,77 @@
+body {
+  background-color: #393E46;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  margin: 20px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 5rem; /* Adjusted for better visibility */
+  color: #4ECCA3;
+}
+
+p {
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+}
+
+.dice {
+  display: inline-block;
+  padding: 20px;
+}
+
+img {
+  width: 150px; /* Specific size looks more professional */
+  transition: transform 0.2s;
+}
+
+/* The Shake Animation */
+.shake {
+  animation: shakeDice 0.5s;
+}
+
+@keyframes shakeDice {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(15deg); }
+  50% { transform: rotate(-15deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+#roll-btn {
+  background-color: #4ECCA3;
+  border: none;
+  color: #393E46;
+  padding: 15px 40px;
+  font-size: 1.5rem;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+  box-shadow: 0 5px #232931;
+}
+
+#roll-btn:active {
+  box-shadow: 0 2px #232931;
+  transform: translateY(3px);
+}
+
+footer {
+  margin-top: 50px;
+  color: #EEEEEE;
+  font-family: 'Indie Flower', cursive;
+}
